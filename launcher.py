@@ -5,6 +5,7 @@ print("arg1 text:"+p1)
 print("arg2 select:"+p2)
 
 # a file upload parameter
+print("file full path:" + sys.argv[3])
 with open('/mnt/artifacts/'+sys.argv[3], 'r') as f:
     print("arg3 first line from file:")
     print(f.readline())
